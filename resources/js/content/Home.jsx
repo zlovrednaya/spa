@@ -55,7 +55,8 @@ export default function Home(){
           
           
           </div>
-          <div className="slog-small-right">You can count on us</div>
+
+          <div className="slog-small-right"><span>You can count on us</span></div>
          
         </div>
       </div>

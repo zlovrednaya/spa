@@ -17,8 +17,10 @@ class Main extends Component {
                     <div className="header-common">
                         <h1 className="logo">SPY pro</h1>
                         <ul className="header">
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/">Empower your business</Link></li>
+                            <li><Link to="/guige">Your guide</Link></li>
+                            <li><Link to="/contact">Contact us</Link></li>
+                            <li><Link to="/about">About SPY</Link></li>
                         
                         </ul>
                     </div>
