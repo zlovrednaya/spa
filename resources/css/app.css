@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 body {
     background-color: #ffffff;
-  
+  height:100%;
     margin: 0;
   }
 
-  h1, h2, p, ul, li {
+ body {
     font-family: sans-serif;
   }
   ul.header li {
@@ -52,17 +53,78 @@ body {
   }
 
   .background-top{
-  height: 100vh;
-  width: 1425px;
+    background-size: cover;
+  height: 90vh;
+  width: 100%;
   background-position-y: -50px;
     background-image: url('https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
   }
 
+  .slog-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 70%;
+}
+  
   .slog{
+    width: 90%;
     font-size: 120px;
     text-align: center;
     color: #FFF;
-    top: 20%;
+  
     /* top: 10px; */
     position: relative;
   }
+
+  .background-top{
+    color:#FFF;
+    text-align: center;
+  }
+  
+  .info-button{
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+
+    
+  }
+  .info-go{
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 0px auto;
+    position: relative;
+  }
+
+  .info-square{
+    position: relative;
+    border: solid #FFF;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 15px;
+    transform: rotate(45deg);
+    animation-timing-function: ease-in;
+    -webkit-animation: blink 1s infinite, move 1s infinite;
+  }
+ 
+  @keyframes move {
+    0% { transform: translate(0px, 0px) rotate(45deg); animation-timing-function: ease-in; }
+    100% { transform: translate(0px, 25px) rotate(45deg); }
+}
+
+.info-click:hover{
+  cursor: pointer;
+  color: #f6ba64;
+}
+
+.info-square:hover{
+  border: solid #f6ba64;
+  border-width: 0 2px 2px 0;
+}
+  
