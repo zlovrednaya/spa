@@ -6,25 +6,29 @@ import {
   Link
   } from "react-router-dom";
 import Home from "./content/Home";
-import Stuff from "./content/Stuff";
+import About from "./content/About";
  
 class Main extends Component {
   render() {
     return (
         <BrowserRouter>
             <div>
-            <h1>Simple SPA</h1>
-            <ul className="header">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/stuff">Stuff</Link></li>
-            
-            </ul>
-            <div className="content">
-                <Routes>
-                    <Route exact path="/" element={<Home/>}/>
-                    <Route path="/stuff" element={<Stuff/>}/>
-                </Routes>
-            </div>
+                <div className="row">
+                    <div className="header-common">
+                        <h1 className="logo">SPY pro</h1>
+                        <ul className="header">
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/about">About</Link></li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                <div className="content">
+                    <Routes>
+                        <Route exact path="/" element={<Home/>}/>
+                        <Route path="/about" element={<About/>}/>
+                    </Routes>
+                </div>
             </div>
       </BrowserRouter>
     );
