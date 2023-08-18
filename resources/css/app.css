@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@100;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 body {
     background-color: #ffffff;
   height:100%;
@@ -75,6 +77,20 @@ body {
   
     /* top: 10px; */
     position: relative;
+    font-family: 'Karla', sans-serif;
+  }
+
+  .slog-small{
+    display: flex;
+    width: 90%;
+    height: 60%;
+    margin-left: 10%;
+    font-size: 100px;
+    text-align: left;
+    color: #0e1b29;
+    vertical-align: bottom;
+    align-items: end;
+    
   }
 
   .background-top{
@@ -128,3 +144,57 @@ body {
   border-width: 0 2px 2px 0;
 }
   
+.page{
+  height: 100vh;
+  margin-top: 50px;
+}
+
+.img-order{
+  margin-top: 50px;
+  width: 40%;
+  height: 70vh;
+  background-position-y: -320px;
+  background-position-x: -510px;
+    background-image: url('https://images.unsplash.com/photo-1530971013997-e06bb52a2372?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1396&q=80');
+}
+.img-count{
+  width: 40%;
+  height: 70vh;
+  background-image: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1611&q=80');
+}
+
+.flex-img-txt{
+  display: flex;
+}
+.slogo-pg{
+  width: 60%;
+}
+.slogo-rigth-pg{
+  width: 40%;
+}
+
+.page-topic{
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Karla', sans-serif;
+    font-size: 35px;
+    margin: 5% 0 0 10%;
+}
+
+.page-topic-span{
+  border-bottom: solid 4px #ffb800;
+}
+
+.circle-button{
+  width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 1px #0b254a;
+    margin-left: 60%;
+
+}
+
+.img-left{
+  padding-top: 50px;
+    width: 80%;
+    height: 90vh;
+}
