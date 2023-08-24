@@ -7,6 +7,8 @@ import {
   } from "react-router-dom";
 import Home from "./content/Home";
 import About from "./content/About";
+import Footer from "./main/Footer";
+
  
 class Main extends Component {
   render() {
@@ -21,8 +23,12 @@ class Main extends Component {
                             <li><Link to="/guige">Your guide</Link></li>
                             <li><Link to="/contact">Contact us</Link></li>
                             <li><Link to="/about">About SPY</Link></li>
+                            
                         
                         </ul>
+                        <div>
+                            <div className='sign-in'><Link to="/signin">Sign in</Link></div>
+                        </div>
                     </div>
                 </div>
                 <div className="content">
@@ -32,6 +38,7 @@ class Main extends Component {
                     </Routes>
                 </div>
             </div>
+            <div><Footer/></div>
       </BrowserRouter>
     );
   }
